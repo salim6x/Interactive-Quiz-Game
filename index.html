@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interactive Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Quiz Game</h1>
+        <div id="category-selection">
+            <h2>Select Category</h2>
+            <div id="categories"></div>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <div id="question-header">
+                <div id="question-timer">Time Left: <span id="timer">15</span>s</div>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="question"></div>
+            <div id="choices"></div>
+            <div id="feedback"></div>
+            <button id="next-btn" class="hidden">Next</button>
+        </div>
+        <div id="results-container" class="hidden">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

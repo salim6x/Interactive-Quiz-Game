@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+#categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #0056b3;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#question-timer {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+#progress-bar-container {
+    width: 60%;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: #4caf50;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+
+#question {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-btn {
+    padding: 10px;
+    border: 2px solid #007bff;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.choice-btn:hover {
+    background-color: #e7f3ff;
+}
+
+.choice-btn.correct {
+    background-color: #4caf50;
+    color: white;
+    border-color: #4caf50;
+}
+
+.choice-btn.incorrect {
+    background-color: #d9534f;
+    color: white;
+    border-color: #d9534f;
+}
+
+#feedback {
+    margin-top: 10px;
+    min-height: 24px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#next-btn, #restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background-color: #0056b3;
+}
